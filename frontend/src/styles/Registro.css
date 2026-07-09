@@ -1,0 +1,21 @@
+.registro-card {
+  max-width: 500px;
+}
+
+.registro-row {
+  gap: 12px;
+}
+
+.registro-login-link {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+.registro-login-link a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.registro-login-link a:hover {
+  text-decoration: underline;
+}

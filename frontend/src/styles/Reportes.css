@@ -1,0 +1,219 @@
+/* ===== GLOW CARD (Total tickets) ===== */
+.glow-card {
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(37, 99, 235, .25);
+  transition: transform .2s ease;
+}
+
+.glow-card:hover { transform: translateY(-4px); }
+
+.glow-card-primary {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+.glow-card::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .12);
+  top: -60px;
+  right: -40px;
+}
+
+.glow-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.glow-card-number {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.glow-card-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, .85);
+  margin-top: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== STAT CARD (por estado) ===== */
+.stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid #eef1f6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, .05);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, .1);
+}
+
+.stat-card-number {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-panel {
+  background: #fff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+}
+
+/* ===== PANEL CARD (tablas) ===== */
+.panel-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid #eef1f6;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, .05);
+  transition: box-shadow .2s ease;
+}
+
+.panel-card:hover {
+  box-shadow: 0 14px 30px rgba(15, 23, 42, .08);
+}
+
+.panel-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+/* ===== PRIORITY BARS ===== */
+.priority-row { margin-bottom: 16px; }
+.priority-row:last-child { margin-bottom: 0; }
+
+.priority-bar-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 50px;
+  background: #f1f5f9;
+  overflow: hidden;
+}
+
+.priority-bar-fill {
+  height: 100%;
+  border-radius: 50px;
+  transition: width .6s ease;
+}
+
+/* ===== TECNICOS ===== */
+.tecnico-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.tecnico-row:last-child { margin-bottom: 0; }
+
+.tecnico-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), #7c3aed);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ===== RESUMEN ===== */
+.resumen-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+  color: #475569;
+}
+
+.resumen-row:last-child { border-bottom: none; }
+
+/* ===== EXPORT BUTTONS ===== */
+.export-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.export-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 12px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.export-btn:active {
+  transform: translateY(1px);
+}
+
+.export-btn-csv {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(22, 163, 74, .3);
+}
+
+.export-btn-csv:hover {
+  box-shadow: 0 12px 24px rgba(22, 163, 74, .4);
+  transform: translateY(-2px);
+}
+
+.export-btn-pdf {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(220, 38, 38, .3);
+}
+
+.export-btn-pdf:hover {
+  box-shadow: 0 12px 24px rgba(220, 38, 38, .4);
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 576px) {
+  .reportes-hero { padding: 24px 20px; }
+  .export-actions { width: 100%; }
+  .export-btn { flex: 1; justify-content: center; }
+}

@@ -1,0 +1,88 @@
+.ticket-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0;
+  background: var(--color-surface);
+  border-radius: 0.625rem;
+  border: 1px solid var(--color-border);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+.ticket-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-color: var(--color-primary);
+}
+
+.ticket-card-border {
+  width: 4px;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+.ticket-card-id {
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  min-width: 50px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.ticket-card-body {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 0;
+}
+
+.ticket-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.ticket-card-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ticket-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ticket-card-spec {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.ticket-card-priority-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.ticket-card-priority {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.ticket-card-user {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.ticket-card-actions {
+  flex-shrink: 0;
+  padding-right: 12px;
+}
