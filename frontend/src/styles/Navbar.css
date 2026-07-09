@@ -15,6 +15,7 @@
   max-width: 1440px;
   margin: 0 auto;
   gap: 8px;
+  overflow: hidden;
 }
 
 .navbar-brand {
@@ -207,7 +208,6 @@
   border: none;
   cursor: pointer;
   padding: 4px;
-  margin-left: auto;
 }
 .hamburger-line {
   display: block;
@@ -231,6 +231,10 @@
   .hamburger {
     display: flex;
   }
+  .navbar-inner {
+    gap: 4px;
+    padding: 0 12px;
+  }
   .navbar-links {
     display: none;
     position: absolute;
@@ -253,5 +257,12 @@
   }
   .user-name {
     display: none;
+  }
+  .user-avatar-btn {
+    padding: 4px;
+  }
+  .nav-icon-btn {
+    width: 32px;
+    height: 32px;
   }
 }
